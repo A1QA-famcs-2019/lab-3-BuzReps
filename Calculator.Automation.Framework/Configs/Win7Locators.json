@@ -1,0 +1,32 @@
+﻿{
+        // calculator props
+        "CalculatorApplicationPath": "C:\\Windows\\System32\\calc1.exe",
+        "CalculatorMainWindowName": "Calculator",
+
+        // operations
+        "CalculatorMainWindowButtonAddId": "93",
+        "CalculatorMainWindowButtonSubtractId": "94",
+        "CalculatorMainWindowButtonMultiplyId": "92",
+        "CalculatorMainWindowButtonDivideId": "91",
+        "CalculatorMainWindowButtonGetResultId": "121",
+        "CalculatorMainWindowLabelResultId": "158",
+
+        // memory pad
+        "CalculatorKeypadMemoryButtonStoreId": "124",
+        "CalculatorKeypadMemoryButtonAddId": "125",
+        "CalculatorKeypadMemoryButtonSubtractId": "126",
+        "CalculatorKeypadMemoryButtonRecallId": "123",
+        "CalculatorKeypadMemoryButtonClearId": "122",
+
+        // numeric pad
+        "CalculatorKeypadNumericButtonId0": "130",
+        "CalculatorKeypadNumericButtonId1": "131",
+        "CalculatorKeypadNumericButtonId2": "132",
+        "CalculatorKeypadNumericButtonId3": "133",
+        "CalculatorKeypadNumericButtonId4": "134",
+        "CalculatorKeypadNumericButtonId5": "135",
+        "CalculatorKeypadNumericButtonId6": "136",
+        "CalculatorKeypadNumericButtonId7": "137",
+        "CalculatorKeypadNumericButtonId8": "138",
+        "CalculatorKeypadNumericButtonId9": "139"
+}
