@@ -63,8 +63,7 @@ namespace Calculator.Automation.Tests.Assignment1
                 [Test(ExpectedResult = 1030)]
                 public static int AssignmentTest()
                 {
-                        Assert.IsTrue(Calculator.Instance.Launch());
-
+                        Assert.DoesNotThrow(Calculator.Instance.Launch);
                         MainWindow mainWindow = new MainWindow(Calculator.Instance.GetWindow());
                         mainWindow.KeypadNumeric.EnterNumber("12");
                         mainWindow.ButtonAdd.Click();

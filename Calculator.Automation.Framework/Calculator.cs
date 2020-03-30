@@ -35,10 +35,9 @@ namespace Calculator.Automation.Framework
                 /// Launch calculator process.
                 /// </summary>
                 /// <returns><code>true</code> if process is launched, <code>false</code> otherwise</returns>
-                public bool Launch()
+                public void Launch()
                 {
                         _application = _application ?? Application.Launch(ResourceManager.CalculatorApplicationPath);
-                        return !(_application is null);
                 }
 
                 public void Close()
