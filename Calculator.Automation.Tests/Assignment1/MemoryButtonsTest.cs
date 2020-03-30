@@ -7,12 +7,18 @@ using Calculator.Automation.Framework.Util;
 namespace Calculator.Automation.Tests.Assignment1
 {
         using Calculator.Automation.Framework;
+        using NLog;
         using System.Diagnostics;
         using System.IO;
 
         [TestFixture(Category = "A1QA assignment #1")]
         class MemoryButtonsTest
         {
+                /// <summary>
+                /// Logger
+                /// </summary>
+                private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
                 /// <summary>
                 /// Kill all calculator processes
                 /// </summary>
@@ -21,7 +27,8 @@ namespace Calculator.Automation.Tests.Assignment1
                         // find all processes with matching name
                         string calculatorExeFileName = Path.GetFileNameWithoutExtension(ResourceManager.CalculatorApplicationPath);
                         Process[] processList = Process.GetProcessesByName(calculatorExeFileName);
-                        System.Console.Out.WriteLine(String.Format("Found {0} processes with matching name", processList.Length));
+                        System.Console.Out.WriteLine();
+                        logger.Info(string.Format("Found {0} processes with matching name", processList.Length));
 
                         // if [module image path] matches [calculator executable filepath] -> kill process
                         foreach (Process process in processList)
@@ -31,7 +38,7 @@ namespace Calculator.Automation.Tests.Assignment1
                                         if (module.FileName.Equals(ResourceManager.CalculatorApplicationPath))
                                         {
                                                 process.Kill();
-                                                System.Console.Out.WriteLine(String.Format("Killed process with id={0}", process.Id));
+                                                logger.Info(string.Format(string.Format("Killed process with id={0}", process.Id)));
                                                 break;
                                         }
                                 }
