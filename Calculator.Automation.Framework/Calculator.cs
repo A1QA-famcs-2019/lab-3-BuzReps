@@ -38,7 +38,7 @@ namespace Calculator.Automation.Framework
                 public bool Launch()
                 {
                         _application = _application ?? Application.Launch(ResourceManager.CalculatorApplicationPath);
-                        return _application != null ? true : false;
+                        return !(_application is null);
                 }
 
                 public void Close()
