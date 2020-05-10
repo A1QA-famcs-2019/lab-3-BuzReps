@@ -1,6 +1,6 @@
 ﻿{
 	// calculator props
-	"CalculatorApplicationPath": "C:\\Windows\\System32\\calc.exe",
+	"CalculatorApplicationPath": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsCalculator_10.1910.0.0_x64__8wekyb3d8bbwe\\Calculator.exe",
 	"CalculatorMainWindowName": "Calculator",
 
 	// operations
