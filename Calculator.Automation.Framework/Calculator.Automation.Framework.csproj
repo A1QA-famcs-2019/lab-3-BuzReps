@@ -57,9 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculator.cs" />
-    <Compile Include="Mappings\MainWindow.cs" />
-    <Compile Include="Mappings\MemoryKeypad.cs" />
-    <Compile Include="Mappings\NumericKeypad.cs" />
+    <Compile Include="Mappings\Keypads\DefaultOperationsKeypad.cs" />
+    <Compile Include="Mappings\StandardWindow.cs" />
+    <Compile Include="Mappings\Keypads\MemoryKeypad.cs" />
+    <Compile Include="Mappings\Keypads\NumericKeypad.cs" />
     <Compile Include="Mappings\BaseWindow.cs" />
     <Compile Include="Util\ResourceManager.cs" />
   </ItemGroup>

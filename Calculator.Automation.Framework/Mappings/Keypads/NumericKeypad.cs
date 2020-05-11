@@ -16,7 +16,6 @@ namespace Calculator.Automation.Framework.Mappings
 		/// <returns>List of buttons</returns>
 		private List<Button> GetButtons()
 		{
-
 			List<Button> buttons = new List<Button>();
 			foreach (string id in ResourceManager.CalculatorKeypadNumericButtonsId)
 				buttons.Add(GetElement<Button>(SearchCriteria.ByAutomationId(id)));

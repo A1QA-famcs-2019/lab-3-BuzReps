@@ -51,7 +51,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assignment1\MemoryButtonsTest.cs" />
+    <Compile Include="Assignment1\StandartPanelTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Calculator.Automation.Framework\Calculator.Automation.Framework.csproj">

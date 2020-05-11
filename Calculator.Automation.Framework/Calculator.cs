@@ -25,13 +25,6 @@ namespace Calculator.Automation.Framework
 		private Application _application = null;
 
 		/// <summary>
-		/// Empty constructor.
-		/// </summary>
-		private Calculator()
-		{
-		}
-
-		/// <summary>
 		/// Launch calculator process.
 		/// </summary>
 		/// <returns><code>true</code> if process is launched, <code>false</code> otherwise</returns>
@@ -41,7 +34,10 @@ namespace Calculator.Automation.Framework
 			_application = _application ?? Application.Launch(ResourceManager.CalculatorApplicationPath);
 		}
 
-		public void Close()
+		/// <summary>
+		/// Close process
+		/// </summary>
+		public void CloseApplication()
 		{
 			if (_application == null)
 				return;
@@ -66,7 +62,7 @@ namespace Calculator.Automation.Framework
 		/// </summary>
 		~Calculator()
 		{
-			Close();
+			CloseApplication();
 		}
 	}
 }

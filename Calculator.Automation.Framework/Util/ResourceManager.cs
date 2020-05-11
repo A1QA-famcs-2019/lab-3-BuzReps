@@ -24,10 +24,9 @@ namespace Calculator.Automation.Framework.Util
 
 		public static List<string> CalculatorKeypadNumericButtonsId { get; private set; } = null;
 
-		public static void Load(string jsonFilepath)
+		static ResourceManager()
 		{
-
-			string fileContents = File.ReadAllText(jsonFilepath);
+			string fileContents = File.ReadAllText("CalculatorLocators.json");
 			Dictionary<string, string> values = JsonConvert.DeserializeObject<Dictionary<string, string>>(fileContents);
 			CalculatorApplicationPath = values["CalculatorApplicationPath"];
 			CalculatorMainWindowName = values["CalculatorMainWindowName"];
@@ -47,6 +46,5 @@ namespace Calculator.Automation.Framework.Util
 			for (int i = 0; i < 10; i++)
 				CalculatorKeypadNumericButtonsId.Add(values[string.Format("CalculatorKeypadNumericButtonId{0}", i)]);
 		}
-
 	}
 }
